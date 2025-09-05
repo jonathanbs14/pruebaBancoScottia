@@ -1,11 +1,14 @@
 package com.prueba.pruebascotia.bean;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
-public class AlumnoIn {
+@Data
+@EqualsAndHashCode
+@AllArgsConstructor
+@NoArgsConstructor
+public class AlumnoDTO {
+
+    private Integer  id;
 
     private String nombre;
 
@@ -14,4 +17,6 @@ public class AlumnoIn {
     private String estado;
 
     private int edad;
+
+
 }
